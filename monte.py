@@ -2,11 +2,9 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-os.system("g++ monte.cpp -o monte.x")
-os.system("./monte.x > monte.dat")
+os.system("g++ suma.cpp -o suma.x")
+os.system("./suma.x > suma.dat")
 
-data = np.loadtxt("monte.dat")
+data = np.loadtxt("suma.dat")
 
-plt.figure()
-plt.hist(data)
-plt.savefig("monte.png")
+print(data)
